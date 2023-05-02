@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* start of code for customizing scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #191422;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #82AF8B; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3CA652; 
+}
+
+
+/* end of code for custom scrollbar */
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+  margin-left: 60px;
+  vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+/* start code to try to figure out image layout */
+
+
+
+/* end code to try to figure out image layout */
+
+
+
+
+
+
+
+
+.rectangle {
+  position: absolute;
+    top: 320px;
+    left: 890px;
+  height: 190px;
+  width: 560px;
+  background-color: #5F2B7A;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+
+
+
+#opaquetext {
+    position: absolute;
+    top: 350px;
+    left: 920px;
+    filter:alpha(opacity=100);  /* worked */
+    -moz-opacity:1.0;           /* worked */
+    opacity: 1.0;               /* worked */
+}
+
+
+.inline-block {
+   display: inline-block;
+}
+
+
+
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropbtn {
+  background-color: #221A2F;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  padding: 0px;
+  background-color: #5F2B7A;
+  margin: 0;
+}
+
+
+
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #5F2B7A;
+  width: 100%;
+  box-shadow: 0px;
+  padding: 0px;
+  z-index: 1;
+}
+
+
+
+/* Links inside the dropdown */
+
+
+.dropdown-content a {
+  float: none;
+  padding: 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+
+
+.dropdown-content a:hover {
+	background-color: #5F2B7A;
+
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+.main {
+margin-top: 240px;
+height: 500px;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  position:fixed; /* Set the navbar to fixed position */
+  top:0; /* Position the navbar at the top of the page */
+  width:100%; /* Full width */
+  z-index: 2;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+body {
+  background-image: url('grid.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  
+  
+}
+
+
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 20px;
+  left: 750px;
+}
+
+.image3 {
+  position: absolute;
+  top: 150px;
+  left: 650px;
+}
+.image4 {
+  position: absolute;
+  top: 150px;
+  left: 850px;
+}
+.image5 {
+  position: absolute;
+  top: 150px;
+  left: 1000px;
+}
+.image6 {
+  position: absolute;
+  top: 150px;
+  left: 1150px;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<title>Vanessa Kernweis</title>
+
+
+<div class="navbar parent">
+	<img class="image1" src='topbar7.png' style="width:100%;"/>
+	
+	<a href="index.htm"><img class="image2" src='vanessatext.png'/></a>
+	
+ <a href="illustration.htm"><img class="image3" src='illustrationtext.png'/></a> 
+ <a href="design.htm"><img class="image4" src='designtext.png'/></a>
+ 
+ <div class="dropdown image5">
+	
+    <img src='projectstext.png'/>
+	
+	<div class="dropdown-content">
+		<a href="ellis.htm"><img src='eliss.png'/></a>
+		<a href="pantry.htm"><img src='pantry.png'/></a>
+		<a href="milkshake.htm"><img src='milkshake.png'/></a>
+ </div>
+ </div>
+ 
+ <a href="character.htm"><img class="image6" src='charactertext.png'/></a>
+</div>
+
+<div class="main">
+
+<div>
+<img src='gamelogo.png' style="top: 200px; margin-left: 250px;">
+<img src='productionslogo.png' style="margin-top: 300px; margin-left: 235px;">
+</div>
+
+<div class="rectangle"></div>
+
+
+	<div id="opaquetext" style="font-family: 'Arial'; font-size: 18px; color: #ffffff;">
+For Pantry Panic, I was responsible for animations and artwork<br>that created the unique atmosphere and style that the team<br>had as its vision for this game.
+<br>
+<br>
+<br>
+You can find access to this game <a href="https://digital-worlds-institute.itch.io/pantry-panic" style="color: #65F282; bold;">here</a>!
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+		<div class="column">
+		<img src='pumpkinboss.png' style="width:100%;">
+		<img src='pumpkinsprite.png' style="width:100%;">
+		<img src='pumpkinvine.png' style="width:100%;">
+		<img src='pumpkindamagesprite.png' style="width:100%;">
+		<img src='garden1.png' style="width:100%;">
+		<img src='garden2.png' style="width:100%;">
+		</div>
+		<div class="column">
+		<img src='pantryscreen.png' style="width:100%;">
+		<img src='dinobirthday.png' style="width:100%;">
+		<img src='dino1walk.png' style="width:100%;">
+		<img src='dinosprite3.png' style="width:100%;">
+		<img src='dino2walk.png' style="width:100%;">
+		<img src='dino3walk.png' style="width:100%;">
+		<img src='garden4.png' style="width:100%;">
+		<img src='garden5.png' style="width:100%;">
+		</div>
+		<div class="column">
+		<img src='cherrybomb.png' style="width:100%;">
+		<img src='cherrybombrun.png' style="width:100%;">
+		<img src='cherrybombsiderun.png' style="width:100%;">
+		<img src='cherryrunback.png' style="width:100%;">
+		<img src='cherryexpside.png' style="width:100%;">
+		<img src='cherryexpback.png' style="width:100%;">
+		<img src='garden3.png' style="width:100%;">
+		</div>
+</div>
+
+
+</div>
+</body>
+</html> 

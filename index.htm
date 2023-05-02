@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.rectangle {
+  position: absolute;
+    top: 470px;
+    left: 1070px;
+  height: 350px;
+  width: 780px;
+  background-color: #5F2B7A;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+
+
+
+#opaquetext {
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+    filter:alpha(opacity=100);  /* worked */
+    -moz-opacity:1.0;           /* worked */
+    opacity: 1.0;               /* worked */
+}
+
+
+.inline-block {
+   display: inline-block;
+}
+
+
+
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  margin-left: 1200px;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+} 
+
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropbtn {
+  background-color: #221A2F;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  padding: 0px;
+  background-color: #5F2B7A;
+  margin: 0;
+}
+
+
+
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #5F2B7A;
+  width: 100%;
+  box-shadow: 0px;
+  padding: 0px;
+  z-index: 1;
+}
+
+
+
+/* Links inside the dropdown */
+
+
+.dropdown-content a {
+  float: none;
+  padding: 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+
+
+.dropdown-content a:hover {
+	background-color: #5F2B7A;
+
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+.main {
+padding: 16px;
+margin-top: 240px;
+height: 500px;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  position:fixed; /* Set the navbar to fixed position */
+  top:0; /* Position the navbar at the top of the page */
+  width:100%; /* Full width */
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+body {
+  background-image: url('grid.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  
+  
+}
+
+
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 20px;
+  left: 750px;
+}
+
+.image3 {
+  position: absolute;
+  top: 150px;
+  left: 650px;
+}
+.image4 {
+  position: absolute;
+  top: 150px;
+  left: 850px;
+}
+.image5 {
+  position: absolute;
+  top: 150px;
+  left: 1000px;
+}
+.image6 {
+  position: absolute;
+  top: 150px;
+  left: 1150px;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<title>Vanessa Kernweis</title>
+
+
+<div class="navbar parent">
+	<img class="image1" src='topbar7.png' style="width:100%;"/>
+	
+	<a href="index.htm"><img class="image2" src='vanessatext.png'/></a>
+	
+ <a href="illustration.htm"><img class="image3" src='illustrationtext.png'/></a> 
+ <a href="design.htm"><img class="image4" src='designtext.png'/></a>
+ 
+ <div class="dropdown image5">
+	
+    <img src='projectstext.png'/>
+	
+	<div class="dropdown-content">
+		<a href="ellis.htm"><img src='eliss.png'/></a>
+		<a href="pantry.htm"><img src='pantry.png'/></a>
+		<a href="milkshake.htm"><img src='milkshake.png'/></a>
+ </div>
+ </div>
+ 
+ <a href="character.htm"><img class="image6" src='charactertext.png'/></a>
+</div>
+
+<div class="main">
+
+
+
+<img src='vanarchyyy.png' style="margin-left:1030px;">
+
+<div class="row">
+	<div class="column">
+<a href="https://twitter.com/vanarchyyy"><img src='twitter.png'></a>
+
+
+<a href="https://vanarchyyy.tumblr.com/"><img src='tumblr.png'></a>
+
+
+<a href="https://www.instagram.com/vanarchyyy/"><img src='insta.png'></a>
+
+</div>
+</div>
+
+
+
+<img src='bunnyhomepage.png' style="margin-left:200px;margin-top:-60px;">
+
+
+<div class="rectangle"></div>
+
+
+	<div id="opaquetext" style="font-family: 'Arial'; font-size: 18px; color: #ffffff;">
+As a graduate of the Digital Worlds Institute at the University of Florida, my education<br>helped me to turn my passion for the arts into practical knowledge and allowed me to<br>hone the skills I have been practicing for many years.
+<br>
+<br>
+I have experience with the Adobe Suite, Clip Studio Paint, Toon Boom, Blender, Unity, and<br>the C++/ C# programming languages. I am familiar with the production pipeline and am<br>skilled at communicating with people of all different backgrounds and specialties. I am a<br>competent, creative individual who provides experience and a keen eye for design to any<br>project team.
+<br>
+<br>
+While my studies at the University of Florida were focused on digital art and design, I have<br>always had an interest in language and writing. I find joy in learning new concepts and<br>applying them to my work.
+</div>
+
+
+
+
+</div>
+
+</body>
+</html> 

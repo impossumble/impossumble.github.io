@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+/* button code */
+
+.button {
+  border: none;
+  color: #5F2B7A;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #5F2B7A; 
+  color: white; 
+  border: 2px solid #9B4EC3;
+}
+
+.button1:hover {
+  background-color: #9B4EC3;
+  color: white;
+}
+
+.button2 {
+  background-color: #5F2B7A; 
+  color: white; 
+  border: 2px solid #9B4EC3;
+}
+
+.button2:hover {
+  background-color: #9B4EC3;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.rectangle {
+  position: absolute;
+    top: 470px;
+    left: 1070px;
+  height: 350px;
+  width: 780px;
+  background-color: #5F2B7A;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+
+
+
+#opaquetext {
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+    filter:alpha(opacity=100);  /* worked */
+    -moz-opacity:1.0;           /* worked */
+    opacity: 1.0;               /* worked */
+}
+
+
+.inline-block {
+   display: inline-block;
+}
+
+
+
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  margin-left: 1200px;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+} 
+
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropbtn {
+  background-color: #221A2F;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  padding: 0px;
+  background-color: #5F2B7A;
+  margin: 0;
+}
+
+
+
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #5F2B7A;
+  width: 100%;
+  box-shadow: 0px;
+  padding: 0px;
+  z-index: 1;
+}
+
+
+
+/* Links inside the dropdown */
+
+
+.dropdown-content a {
+  float: none;
+  padding: 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+
+
+.dropdown-content a:hover {
+	background-color: #5F2B7A;
+
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+.main {
+padding: 16px;
+margin-top: 240px;
+height: 500px;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  position:fixed; /* Set the navbar to fixed position */
+  top:0; /* Position the navbar at the top of the page */
+  width:100%; /* Full width */
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+body {
+  background-image: url('grid.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  
+  
+}
+
+
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 20px;
+  left: 750px;
+}
+
+.image3 {
+  position: absolute;
+  top: 150px;
+  left: 650px;
+}
+.image4 {
+  position: absolute;
+  top: 150px;
+  left: 850px;
+}
+.image5 {
+  position: absolute;
+  top: 150px;
+  left: 1000px;
+}
+.image6 {
+  position: absolute;
+  top: 150px;
+  left: 1150px;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<title>Vanessa Kernweis</title>
+
+
+<div class="navbar parent">
+	<img class="image1" src='topbar7.png' style="width:100%;"/>
+	
+	<a href="index.htm"><img class="image2" src='vanessatext.png'/></a>
+	
+ <a href="illustration.htm"><img class="image3" src='illustrationtext.png'/></a> 
+ <a href="design.htm"><img class="image4" src='designtext.png'/></a>
+ 
+ <div class="dropdown image5">
+	
+    <img src='projectstext.png'/>
+	
+	<div class="dropdown-content">
+		<a href="ellis.htm"><img src='eliss.png'/></a>
+		<a href="pantry.htm"><img src='pantry.png'/></a>
+		<a href="milkshake.htm"><img src='milkshake.png'/></a>
+ </div>
+ </div>
+ 
+ <a href="character.htm"><img class="image6" src='charactertext.png'/></a>
+</div>
+
+<div class="main">
+
+<img src='lnnight.png' style="position: absolute; top: 270px; left: 300px;">  
+<a href="https://sketchfab.com/3d-models/little-neighborhood-house-one-day-version-b589334edaf44cd5982056c4fd25c8a9">
+<button class="button button1" style="position: fixed; top: 330px; left: 680px;">Model - Day</button></a>
+<br>
+<img src='lnday.png' style="position: absolute; top: 600px; left: 300px;"> 
+<a href="https://sketchfab.com/3d-models/little-neighborhood-house-one-night-version-5203e0d75d51451695630507aced2245">
+<button class="button button1" style="position: fixed; top: 650px; left: 680px;">Model - Night</button>
+</a>
+
+<a href="https://www.behance.net/gallery/169202673/Little-Neighborhoods-%28An-independent-Blender-study%29">
+<button class="button button1" style="position: fixed; top: 550px; left: 100px;">Process</button>
+</a>
+
+
+
+
+<img src='redqnone.png' style="position: absolute; top: 270px; right: 250px;">  
+<a href="https://sketchfab.com/3d-models/red-queens-room-no-lighting-e063fb552b2a4f098e7a57ca16b0ee5f">
+<button class="button button1" style="position: fixed; top: 330px; left: 1050px;">No Lighting</button></a>
+<br>
+<img src='redqnight.png' style="position: absolute; top: 600px; right: 250px;"> 
+<a href="https://sketchfab.com/3d-models/red-queens-room-night-lighting-fb90956a57264fccb7931b5291a4bb9c">
+<button class="button button1" style="position: fixed; top: 650px; left: 1050px;">Night Lighting</button>
+</a>
+
+<a href="https://www.behance.net/gallery/166372777/The-Red-Queens-Room">
+<button class="button button1" style="position: fixed; top: 550px; right: 100px;">Process</button>
+</a>
+
+
+</div>
+</body>
+</html> 
